@@ -8,14 +8,17 @@ def get_valid_dir():
     else:
         print("Invalid directory.")
 
-def rename_files(dir_path, name, season):
+def rename_files(dir_path, name, season, file_ext):
     files = os.listdir(dir_path)
 
 
     counter = 0
     for file in files:
         counter += 1
-        new_name = f"{name}_{season}_{counter}.mp4"
+        if counter < 10:
+            new_name = f"{name}_{season}_0{counter}.{file_ext}"
+        else:
+            new_name = f"{name}_{season}_{counter}.{file_ext}"
         
         old_file = os.path.join(dir_path, file)
         new_file = os.path.join(dir_path, new_name)
@@ -27,9 +30,9 @@ def rename_files(dir_path, name, season):
         except Exception as e:
             print("Unknown error, goodbye.")
 
-
+file_ext = input("file extension: ")
 while True:
-    exit_code = input("[Enter] to continue, 'exit' to quit. ")
+    exit_code = input("\n[Enter] to continue, 'exit' to quit. ")
     if exit_code.lower() == 'exit':
         print("Thank you... Goodbye.")
     else:
@@ -37,4 +40,4 @@ while True:
         name = input("Name: ")
         season = input("Season: ")
     
-        rename_files(directory_path, name, season)
+        rename_files(directory_path, name, season, file_ext)
