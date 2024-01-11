@@ -20,11 +20,11 @@ I made this to organize plex files properly, as I was tired of doing it manually
    *    [Enter] to continue, 'exit' to quit.
 
 ## Logging:
-Renamed: 1244599 (1).mkv to ExampleShow_Season 1_01.mkv
-Renamed: 1244599 (1).mp4 to ExampleShow_Season 1_02.mp4
-Renamed: 1244599 (1).txt to ExampleShow_Season 1_03.txt
-Renamed: 1244599 (2).txt to ExampleShow_Season 1_04.txt
-Renamed: abdefg (1).mkv to ExampleShow_Season 2_01.mkv
-Renamed: abdefg (1).mp4 to ExampleShow_Season 2_02.mp4
-Renamed: abdefg (1).txt to ExampleShow_Season 2_03.txt
+Renamed: 1244599 (1).mkv to ExampleShow_Season 1_01.mkv\
+Renamed: 1244599 (1).mp4 to ExampleShow_Season 1_02.mp4\
+Renamed: 1244599 (1).txt to ExampleShow_Season 1_03.txt\
+Renamed: 1244599 (2).txt to ExampleShow_Season 1_04.txt\
+Renamed: abdefg (1).mkv to ExampleShow_Season 2_01.mkv\
+Renamed: abdefg (1).mp4 to ExampleShow_Season 2_02.mp4\
+Renamed: abdefg (1).txt to ExampleShow_Season 2_03.txt\
 Renamed: abdefg (2).txt to ExampleShow_Season 2_04.txt
