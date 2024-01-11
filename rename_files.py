@@ -1,11 +1,13 @@
 import os
 
+
 def get_valid_dir():
     directory_path = input("Directory: ")
     if os.path.isdir(directory_path):
         return directory_path
     else:
         print("Invalid directory.")
+
 
 def rename_files(dir_path, log_file):
     initial_dir = os.path.abspath(dir_path)
@@ -45,6 +47,8 @@ def rename_files(dir_path, log_file):
         rel_path = os.path.relpath(root, initial_dir)
         if rel_path != ".":
             print(f"\n Finished Renaming {rel_path}")
+            log_file.write(f"====Finished Renaming {rel_path}====\n")
+            
 
 def main():
     while True:
@@ -61,6 +65,7 @@ def main():
             
             with open(log_file_path, 'a') as log_file:
                 rename_files(directory_path, log_file)
+                
 
 if __name__ == "__main__":
     main()
