@@ -5,7 +5,7 @@ I made this to organize plex files properly, as I was tired of doing it manually
 # How it works
 
 1. Make sure your files are in order, and in their correct folder
-2. Follow: https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/
+2. Follow: https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/ \
   2a. ShowName/Season 1,2..3..n
 3. Run this script
    *   The code automatically will check the old file name filetype before converting the name that way the mkv, or mp4 stay the same
