@@ -20,16 +20,16 @@ I made this to organize plex files properly, as I was tired of doing it manually
    *    [Enter] to continue, 'exit' to quit.
 
 ## Logging:
-********Renaming Season 1********\
-* Renamed: EP191.mp3 to ShowExample_Season 1_01.mp3\
-* Renamed: EP192.log to ShowExample_Season 1_02.log\
-* Renamed: EP193.mkv to ShowExample_Season 1_03.mkv\
-* Renamed: EP194.mp4 to ShowExample_Season 1_04.mp4\
-* Renamed: EP195.txt to ShowExample_Season 1_05.txt\
-********Renaming Season 2********\
-* Renamed: EP191.mp3 to ShowExample_Season 2_01.mp3\
-* Renamed: EP192.log to ShowExample_Season 2_02.log\
-* Renamed: EP193.mkv to ShowExample_Season 2_03.mkv\
-* Renamed: EP194.mp4 to ShowExample_Season 2_04.mp4\
+********Renaming Season 1********
+* Renamed: EP191.mp3 to ShowExample_Season 1_01.mp3
+* Renamed: EP192.log to ShowExample_Season 1_02.log
+* Renamed: EP193.mkv to ShowExample_Season 1_03.mkv
+* Renamed: EP194.mp4 to ShowExample_Season 1_04.mp4
+* Renamed: EP195.txt to ShowExample_Season 1_05.txt
+********Renaming Season 2********
+* Renamed: EP191.mp3 to ShowExample_Season 2_01.mp3
+* Renamed: EP192.log to ShowExample_Season 2_02.log
+* Renamed: EP193.mkv to ShowExample_Season 2_03.mkv
+* Renamed: EP194.mp4 to ShowExample_Season 2_04.mp4
 * Renamed: EP195.txt to ShowExample_Season 2_05.txt
 
