@@ -20,7 +20,7 @@ I made this to organize plex files properly, as I was tired of doing it manually
    *    [Enter] to continue, 'exit' to quit.
 
 ## Logging:
-********Renaming Season 1********\
+********Renaming Season 1********
 * Renamed: EP191.mp3 to ShowExample_Season 1_01.mp3
 * Renamed: EP192.log to ShowExample_Season 1_02.log
 * Renamed: EP193.mkv to ShowExample_Season 1_03.mkv
