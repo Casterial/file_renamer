@@ -1,0 +1,16 @@
+
+*.zip
+build/rename_files/Analysis-00.toc
+build/rename_files/EXE-00.toc
+build/rename_files/localpycs/pyimod01_archive.pyc
+build/rename_files/localpycs/pyimod02_importers.pyc
+build/rename_files/localpycs/pyimod03_ctypes.pyc
+build/rename_files/localpycs/pyimod04_pywin32.pyc
+build/rename_files/localpycs/struct.pyc
+build/rename_files/PKG-00.toc
+build/rename_files/PYZ-00.pyz
+build/rename_files/PYZ-00.toc
+build/rename_files/rename_files.exe.manifest
+build/rename_files/rename_files.pkg
+build/rename_files/warn-rename_files.txt
+build/rename_files/xref-rename_files.html
