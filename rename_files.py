@@ -1,13 +1,11 @@
 import os
 
-
 def get_valid_dir():
     directory_path = input("Directory: ")
     if os.path.isdir(directory_path):
         return directory_path
     else:
         print("Invalid directory.")
-
 
 def rename_files(dir_path, log_file):
     initial_dir = os.path.abspath(dir_path)
@@ -20,11 +18,15 @@ def rename_files(dir_path, log_file):
         name = os.path.basename(parent_folder_path)
 
         counter = 0
-
+        rel_path = os.path.relpath(root, initial_dir)
+        if rel_path != ".":
+            print(f"\n Renaming {rel_path}")
+            log_file.write(f"********Renaming {rel_path}********\n")
+            
         for file in files:
             counter += 1
             old_file = os.path.join(root, file)
-            file_ext = os.path.splitext(old_file)[1]
+            file_ext = os.path.splitext(old_file)[1]                
             if counter < 10:
                 new_name = f"{name}_{current_folder_name}_0{counter}{file_ext}"
             else:
@@ -36,7 +38,7 @@ def rename_files(dir_path, log_file):
             if "rename_log.txt" not in old_file:
                 try:
                     os.rename(old_file, new_file)
-                    log_file.write(f"Renamed: {file} to {new_name}\n")
+                    log_file.write(f"* Renamed: {file} to {new_name}\n")
                 except FileExistsError as e:
                     print(f"Skipping file {old_file}, it already exists.")
                 except Exception as e:
@@ -44,11 +46,6 @@ def rename_files(dir_path, log_file):
 
         counter = 0  # Reset counter for each subdirectory
 
-        rel_path = os.path.relpath(root, initial_dir)
-        if rel_path != ".":
-            print(f"\n Finished Renaming {rel_path}")
-            log_file.write(f"====Finished Renaming {rel_path}====\n")
-            
 
 def main():
     while True:
@@ -65,7 +62,6 @@ def main():
             
             with open(log_file_path, 'a') as log_file:
                 rename_files(directory_path, log_file)
-                
 
 if __name__ == "__main__":
     main()
