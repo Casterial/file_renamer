@@ -9,7 +9,7 @@ I made this to organize plex files properly, as I was tired of doing it manually
   2a. ShowName/Season 1,2..3..n
 3. Run this script
    *   The code automatically will check the old file name filetype before converting the name that way the mkv, or mp4 stay the same
-   *   Logging: In the main folder of the show (Where the Season Folders are) there will be a "rename_log.txt", this helps you track what was renamed to what (VERY USEFUL IF YOU HAD AN EXTRA EPISODE IN THE WRONG FOLDER!!) #Logging
+   *   Logging: In the main folder of the show (Where the Season Folders are) there will be a "rename_log.txt", this helps you track what was renamed to what (VERY USEFUL IF YOU HAD AN EXTRA EPISODE IN THE WRONG FOLDER!!) [Logging](#Logging)
      *  Logging is deleted every new run for that show.   
 
 ## Example Run:
@@ -19,7 +19,7 @@ I made this to organize plex files properly, as I was tired of doing it manually
    *    Finished Renaming Season 2
    *    [Enter] to continue, 'exit' to quit.
 
-#Logging:
+## Logging:
 ********Renaming Season 1********
 * Renamed: EP191.mp3 to ShowExample_Season 1_01.mp3
 * Renamed: EP192.log to ShowExample_Season 1_02.log
