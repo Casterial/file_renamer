@@ -1,5 +1,5 @@
 import os
-
+import time
 def get_valid_dir():
     directory_path = input("Directory: ")
     if os.path.isdir(directory_path):
@@ -19,6 +19,7 @@ def rename_files(dir_path, log_file):
 
         counter = 0
         rel_path = os.path.relpath(root, initial_dir)
+        # Fail Safe
         if rel_path != ".":
             print(f"\n Renaming {rel_path}")
             log_file.write(f"********Renaming {rel_path}********\n")
@@ -43,25 +44,31 @@ def rename_files(dir_path, log_file):
                     print(f"Skipping file {old_file}, it already exists.")
                 except Exception as e:
                     print(f"{e}")
+                    raise
 
         counter = 0  # Reset counter for each subdirectory
 
 
 def main():
     while True:
-        exit_code = input("\n[Enter] to continue, 'exit' to quit. \n")
-        if exit_code.lower() == 'exit':
-            print("Thank you... Goodbye.")
-            break
-        else:
-            directory_path = get_valid_dir()
-            
-            log_file_path = os.path.join(directory_path, "rename_log.txt")
-            if os.path.exists(log_file_path):
-                os.remove(log_file_path)
-            
-            with open(log_file_path, 'a') as log_file:
-                rename_files(directory_path, log_file)
+        try:
+            exit_code = input("\n[Enter] to continue, 'exit' to quit. \n")
+            if exit_code.lower() == 'exit':
+                print("Thank you... Goodbye.")
+                break
+            else:
+                directory_path = get_valid_dir()
+                
+                log_file_path = os.path.join(directory_path, "rename_log.txt")
+                if os.path.exists(log_file_path):
+                    os.remove(log_file_path)
+                
+                with open(log_file_path, 'a') as log_file:
+                    rename_files(directory_path, log_file)
+        except KeyboardInterrupt as e:
+            print("User exited. Quitting in 3s...Please wait.")
+            time.sleep(3)
+            exit()
 
 if __name__ == "__main__":
     main()
