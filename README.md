@@ -20,13 +20,13 @@ I made this to organize plex files properly, as I was tired of doing it manually
    *    [Enter] to continue, 'exit' to quit.
 
 ## Logging:
-Renamed: ExampleShow_Season 1_01.mkv to ExampleShow_Season 1_01.mkv
-Renamed: ExampleShow_Season 1_02.mp4 to ExampleShow_Season 1_02.mp4
-Renamed: ExampleShow_Season 1_03.txt to ExampleShow_Season 1_03.txt
-Renamed: ExampleShow_Season 1_04.txt to ExampleShow_Season 1_04.txt
-====Finished Renaming Season 1====
-Renamed: ExampleShow_Season 2_01.mkv to ExampleShow_Season 2_01.mkv
-Renamed: ExampleShow_Season 2_02.mp4 to ExampleShow_Season 2_02.mp4
-Renamed: ExampleShow_Season 2_03.txt to ExampleShow_Season 2_03.txt
-Renamed: ExampleShow_Season 2_04.txt to ExampleShow_Season 2_04.txt
+Renamed: ExampleShow_Season 1_01.mkv to ExampleShow_Season 1_01.mkv\
+Renamed: ExampleShow_Season 1_02.mp4 to ExampleShow_Season 1_02.mp4\
+Renamed: ExampleShow_Season 1_03.txt to ExampleShow_Season 1_03.txt\
+Renamed: ExampleShow_Season 1_04.txt to ExampleShow_Season 1_04.txt\
+====Finished Renaming Season 1====\
+Renamed: ExampleShow_Season 2_01.mkv to ExampleShow_Season 2_01.mkv\
+Renamed: ExampleShow_Season 2_02.mp4 to ExampleShow_Season 2_02.mp4\
+Renamed: ExampleShow_Season 2_03.txt to ExampleShow_Season 2_03.txt\
+Renamed: ExampleShow_Season 2_04.txt to ExampleShow_Season 2_04.txt\
 ====Finished Renaming Season 2====
