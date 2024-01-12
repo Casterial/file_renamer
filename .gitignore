@@ -14,3 +14,4 @@ build/rename_files/rename_files.exe.manifest
 build/rename_files/rename_files.pkg
 build/rename_files/warn-rename_files.txt
 build/rename_files/xref-rename_files.html
+rename_files.spec
