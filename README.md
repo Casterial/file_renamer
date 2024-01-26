@@ -4,7 +4,7 @@ I made this to organize plex files properly, as I was tired of doing it manually
 
 # How it works
 
-1. Make sure your files are in order, and in their correct folder
+1. Make sure your files are in order(ex eps1, eps2, eps3...), and in their correct folder
 2. Follow: https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/ \
   2a. ShowName/Season 1,2..3..n
 3. Run this script
