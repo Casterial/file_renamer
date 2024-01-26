@@ -1,13 +1,16 @@
 import os
+import sys
 import time
 
 
 def get_valid_dir():
-    directory_path = input("Show Directory: ")
-    if os.path.isdir(directory_path):
-        return directory_path
-    else:
-        print("Invalid directory.")
+    while True:
+        directory_path = input("Show Directory: ")
+        if os.path.isdir(directory_path):
+            return directory_path
+        else:
+            print("Invalid directory.")
+
 
 def rename_files(dir_path, log_file):
     initial_dir = os.path.abspath(dir_path)
@@ -41,10 +44,13 @@ def rename_files(dir_path, log_file):
                 # Fail Safe: making sure we don't make a file out of the log file we created
                 if "rename_log.txt" not in old_file:
                     try:
-                        os.rename(old_file, new_file)
-                        log_file.write(f"* Renamed: {file} to {new_name}\n")
+                        if not os.path.exists(new_file):
+                            os.replace(old_file, new_file)
+                            log_file.write(f"* Renamed: {file} to {new_name}\n")
+                        else:
+                            log_file.write(f"* Skipped: {file} Already Completed\n")
                     except FileExistsError as e:
-                        print(f"Skipping file {old_file}, it already exists.")
+                        print(f"* Skipped: {file} Already Completed\n")
                     except Exception as e:
                         print(f"{e}")
                         raise
@@ -65,7 +71,8 @@ def main():
         except KeyboardInterrupt as e:
             print("User exited. Quitting in 3s...Please wait.")
             time.sleep(3)
-            exit()
+            sys.exit()
+
 
 if __name__ == "__main__":
     main()
