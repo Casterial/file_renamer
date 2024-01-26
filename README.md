@@ -13,11 +13,9 @@ I made this to organize plex files properly, as I was tired of doing it manually
        * Logging is deleted every new run for that show.   
 
 ## Example Run:
-   *   [Enter] to continue, 'exit' to quit.
    *   Directory: C:\Users\Casterial\Downloads\ExampleShow
    *    Finished Renaming Season 1
    *    Finished Renaming Season 2
-   *    [Enter] to continue, 'exit' to quit.
 
 
 ## Logging:
